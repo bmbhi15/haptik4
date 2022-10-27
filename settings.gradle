@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url "https://artifactory.hellohaptik.com/artifactory/libs-release-local"
+            credentials {
+                username "haptik-sdk-user"
+                password "Hx8c664x9@Qmd&wE"
+            }
+        }
+    }
+}
+rootProject.name = "haptik4"
+include ':app'
